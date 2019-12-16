@@ -27,13 +27,6 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About Me',
-        name: 'Carly Huang'
-    })
-})
-
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
@@ -73,7 +66,6 @@ app.get('/products', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
         title: 'Help',
         name: 'Carly Huang'
     })
