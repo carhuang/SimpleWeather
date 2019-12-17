@@ -11,7 +11,7 @@ function forecast(lat, long, callback) {
             const current = body.currently
             const currentTemp = current.temperature
             const currentRain = current.precipProbability * 100
-            callback(undefined, 'It is currently ' + currentTemp + ' degrees out. There is a ' + currentRain + '% chance of rain.')
+            callback(undefined, body.daily.data[0].summary + '<br />It is currently ' + currentTemp + ' degrees out. There is a ' + currentRain + '% chance of rain.')
         }
     })
 }
