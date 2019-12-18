@@ -4,17 +4,14 @@ It uses the [Geocoding API](https://docs.mapbox.com/api/search/#geocoding) by Ma
 
 
 ### Project Setup
-To install the required node modules:
+To run the project after git clone:
 ```
-npm install
-```
-To run the project:
-```
-npm run start
+$ npm install
+$ npm run start
 ```
 To run the project with nodemon:
 ```
-npm run dev
+$ npm run dev
 ```
 
 
